@@ -1,0 +1,21 @@
+import tkinter as tk
+root=tk.Tk()
+def change_color(color): 
+    root.config(bg=color)
+root.title("Background Changer")
+root.geometry("500x500")
+root.config(bg="White")
+label1=tk.Label(root,text="Choose your background color")
+label1.pack(pady=10)
+yellow_button=tk.Button(root, text="yellow",bg="yellow",command=lambda: change_color("yellow"))
+yellow_button.config
+yellow_button.pack(pady=15)
+blue_button=tk.Button(root,text="blue",bg="blue",command=lambda: change_color("blue"))
+blue_button.pack(pady=7)
+green_button=tk.Button(root,text="green",bg="green",command=lambda: change_color("green"))
+green_button.pack(pady=7)
+red_button=tk.Button(root,text="red",bg="red",command=lambda: change_color("red"))
+red_button.pack(pady=7)
+white_button=tk.Button(root,text="white",bg="white",command=lambda: change_color("white"))
+white_button.pack(pady=7)
+root.mainloop()
